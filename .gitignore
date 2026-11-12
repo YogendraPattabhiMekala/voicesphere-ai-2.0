@@ -1,0 +1,22 @@
+.env
+*.db
+*.sqlite*
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
+playwright-report/
+test-results/
+blob-report/
+coverage/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+terraform.tfstate*
+# Environment files and secrets
+.env.*
+!.env.example
