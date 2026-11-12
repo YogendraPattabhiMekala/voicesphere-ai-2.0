@@ -1,5 +1,5 @@
 # VoiceSphere AI 2.0
-
+[![CI](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml/badge.svg)](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml)
 A multi-tenant contact-center engineering portfolio project for fictional retailer **Northstar Retail**. This repository currently delivers a runnable API + web console with tenant-aware customer/order/ticket workflows, agent configuration, session issuance, an explicit mock voice mode, and a separate LiveKit Agents worker using Deepgram, OpenAI, Cartesia, and Silero plugins. The API can issue scoped LiveKit tokens with agent dispatch, and the browser has an opt-in microphone/media connection path. The provider-backed end-to-end call has not been exercised; local default mode is intentionally mock.
 
 > **Status:** foundation and business-tool MVP. Not production-ready; see [known limitations](docs/KNOWN_LIMITATIONS.md) and [progress](PROJECT_PROGRESS.md). No real customer records or credentials belong here.
