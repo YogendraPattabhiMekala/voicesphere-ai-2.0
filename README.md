@@ -1,5 +1,19 @@
 # VoiceSphere AI 2.0
 [![CI](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml/badge.svg)](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml)
+## What This Project Demonstrates
+
+VoiceSphere AI 2.0 is a full-stack, multi-tenant AI contact-center portfolio project demonstrating:
+
+- **Full-Stack Engineering:** Next.js and TypeScript dashboard integrated with a Python FastAPI backend.
+- **Real-Time Conversational AI:** LiveKit-based voice sessions integrating Deepgram speech recognition, OpenAI language models, Cartesia speech synthesis, and Silero VAD.
+- **AI Agent Configuration:** Workspace-based agent management with configurable instructions and greetings.
+- **Business Workflows:** Tenant-scoped customer, order, support-ticket, and audit-log functionality using synthetic demo data.
+- **Authentication and Access Control:** API authentication, role checks, and tenant-aware data access.
+- **DevOps and CI/CD:** GitHub Actions automation for Python tests, Playwright end-to-end tests, linting, application builds, Terraform validation, and Docker image builds.
+- **Voice Integration Validation:** A provider-backed voice conversation was successfully tested in a configured local environment.
+
+**Project maturity:** Functional portfolio MVP with validated CI checks and local voice testing; not a production deployment.
+
 
 VoiceSphere AI 2.0 is a multi-tenant AI contact-center engineering portfolio project built for the fictional retailer **Northstar Retail**.
 
