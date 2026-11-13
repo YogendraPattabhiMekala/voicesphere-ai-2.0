@@ -28,3 +28,16 @@ See `docs/ARCHITECTURE.md`. `PROJECT_PROGRESS.md` contains actual build/test evi
 Explore the high-level architecture and real-time voice conversation flow of VoiceSphere AI 2.0.
 
 [View Architecture Diagrams](docs/VOICE_ARCHITECTURE.md)
+
+
+## Application Screenshots
+
+### Overview Dashboard
+![VoiceSphere Overview Dashboard](docs/screenshots/overview-dashboard.png)
+
+### AI Agents Management
+![VoiceSphere AI Agents](docs/screenshots/ai-agents.png)
+
+### Voice Playground
+![VoiceSphere Voice Playground](docs/screenshots/voice-playground.png)
+
