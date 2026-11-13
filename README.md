@@ -1,6 +1,14 @@
 # VoiceSphere AI 2.0
 [![CI](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml/badge.svg)](https://github.com/YogendraPattabhiMekala/voicesphere-ai-2.0/actions/workflows/ci.yml)
-A multi-tenant contact-center engineering portfolio project for fictional retailer **Northstar Retail**. This repository currently delivers a runnable API + web console with tenant-aware customer/order/ticket workflows, agent configuration, session issuance, an explicit mock voice mode, and a separate LiveKit Agents worker using Deepgram, OpenAI, Cartesia, and Silero plugins. The API can issue scoped LiveKit tokens with agent dispatch, and the browser has an opt-in microphone/media connection path. The provider-backed end-to-end call has not been exercised; local default mode is intentionally mock.
+
+VoiceSphere AI 2.0 is a multi-tenant AI contact-center engineering portfolio project built for the fictional retailer **Northstar Retail**.
+
+The platform combines a Next.js web dashboard, FastAPI backend, tenant-aware customer/order/support-ticket workflows, configurable AI agents, and a real-time voice architecture powered by LiveKit, Deepgram, OpenAI, Cartesia, and Silero VAD.
+
+The repository includes an offline mock voice mode and an opt-in LiveKit voice integration. A local provider-backed voice conversation with the Skylar voice was successfully tested, including speech interaction and session termination. This does not establish production readiness or guarantee that the published repository can reproduce the test without configuration.
+
+Automated GitHub Actions checks cover Python tests, frontend end-to-end tests, linting, builds, voice-worker compilation, Terraform validation, and Docker image builds.
+
 
 > **Status:** foundation and business-tool MVP. Not production-ready; see [known limitations](docs/KNOWN_LIMITATIONS.md) and [progress](PROJECT_PROGRESS.md). No real customer records or credentials belong here.
 
@@ -14,7 +22,8 @@ For Docker: `docker compose up --build` (Docker Desktop required). The local SQL
 
 ## Honest feature status
 - Implemented: API auth, role checks, tenant-scoped data access, seed records, customer verification, orders, tickets, agents, audit events, session-token endpoint (mock or LiveKit credentials), basic dashboard, tests.
-- Implemented but not live-tested: LiveKit browser transport/session token and a Deepgram/OpenAI/Cartesia/Silero voice worker. Credentials and a LiveKit server are needed to run it. Its business tools are intentionally disabled.
+- **Implemented and locally exercised:** LiveKit voice transport/session authorization and a Deepgram/OpenAI/Cartesia/Silero voice worker. A provider-backed voice conversation was successfully tested in a configured local environment. Further reproducibility, reliability, and deployment validation are required.
+
 - Not implemented: production OIDC, pgvector ingestion and RAG, Redis/Celery workflows, actual human-agent room handoff, billing-grade usage metering, full ECS/RDS AWS stack. AWS and Docker were not tested. No audio is recorded by the mock.
 - Never paste secrets into source control. See `docs/LOCAL_SETUP.md` and `docs/KNOWN_LIMITATIONS.md`.
 
