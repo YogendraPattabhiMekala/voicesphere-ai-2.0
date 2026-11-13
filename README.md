@@ -23,3 +23,8 @@ The sidebar uses Next.js routes so browser navigation is persistent: `/` (Overvi
 
 ## Project map
 See `docs/ARCHITECTURE.md`. `PROJECT_PROGRESS.md` contains actual build/test evidence. Contributions welcome; CI does not need production secrets.
+## System Architecture
+
+Explore the high-level architecture and real-time voice conversation flow of VoiceSphere AI 2.0.
+
+[View Architecture Diagrams](docs/VOICE_ARCHITECTURE.md)
